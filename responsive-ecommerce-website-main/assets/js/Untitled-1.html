@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Post Example</title>
+  <style>
+    /* Center the post */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Grid container */
+    .post-container {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      gap: 10px;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+    }
+
+    /* Image */
+    .post-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    /* Icons container */
+    .icons-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Like and comment icons */
+    .icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="post-container">
+    <img class="post-image" src="" alt="Post Image">
+    <div class="icons-container">
+      <div class="icon">
+        <img src="path/to/like-icon.png" alt="Like Icon">
+        <span>Like</span>
+      </div>
+      <div class="icon">
+        <img src="path/to/comment-icon.png" alt="Comment Icon">
+        <span>Comment</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

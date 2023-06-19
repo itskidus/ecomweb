@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+  <title>Shopping Cart</title>
+ 
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container"><div class="solid">
+            <a href="index.html" class="nav__logo">
+                <i class='bx bx-shopping-bag'></i> ገበያ
+            </a>
+  
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                    </li>
+                  
+                </ul>
+  
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
+                </div>
+            </div>
+  
+            <div class="nav__btns">
+                <!-- Theme change button -->
+             
+  
+             
+  
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </div> </div>
+        </nav>
+    </header>
+   
+    <div class="navbar">
+        <br><br><br><br><br><br>
+        <ul>
+          <li><a href="#Clo">CLOTHES</a></li>
+          <li><a href="#car">CAR</a></li>
+          <li><a href="#wat">WATCHES</a></li>
+          <li><a href="#ele">ELECTRONICS</a></li>
+          <li><a href="#bok">BOOKS</a></li>
+          <li><a href="#sho">SHOES</a></li>
+          <li><a href="#bea">BEAUTY</a></li>
+          <li><a href="#hea">HEALTH</a></li>
+          
+        </ul>
+      </div>
+  <div class="cart-container">
+    <br><br><br>
+    <h1 id="Clo" >CLOTHES</h1>
+    <div class="cart-item">
+      <img src="assets/img/hoodie.png" class="img" alt="">
+      <span>GREEN HOODIE</span>
+      <div class="quantity">
+        <button onclick="decrementQuantity(this)">-</button>
+        <input type="number" min="0" value="0" data-price="2000">
+        <button onclick="incrementQuantity(this)">+</button>
+      </div>
+    </div>
+    <div class="cart-item">
+      <img src="assets/img/dress.jpg" class="img" alt="">
+      <span>BLUE DRESS</span>
+      <div class="quantity">
+        <button onclick="decrementQuantity(this)">-</button>
+        <input type="number" min="0" value="0" data-price="1350">
+        <button onclick="incrementQuantity(this)">+</button>
+      </div>
+    </div>
+    <div class="cart-item">
+      <img src="assets/img/tshit.png" class="img" alt="">
+      <span>CREAM T-SHIRT</span>
+      <div class="quantity">
+        <button onclick="decrementQuantity(this)">-</button>
+        <input type="number" min="0" value="0" data-price="650">
+        <button onclick="incrementQuantity(this)">+</button>
+      </div>
+    </div>
+    <div class="cart-item">
+      <img src="assets/img/pants.jpg" class="img" alt="">
+      <span>CARGO PANTS</span>
+      <div class="quantity">
+        <button onclick="decrementQuantity(this)">-</button>
+        <input type="number" min="0" value="0" data-price="950">
+        <button onclick="incrementQuantity(this)">+</button>
+      </div>
+    </div>
+    <div class="cart-item">
+        <img src="assets/img/short.jpg" class="img" alt="">
+        <span>BLACK SHORTS</span>
+        <div class="quantity">
+          <button onclick="decrementQuantity(this)">-</button>
+          <input type="number" min="0" value="0" data-price="100">
+          <button onclick="incrementQuantity(this)">+</button>
+        </div>
+      </div>
+
+      <h1 id="car" >CARS</h1>
+      <div class="cart-item">
+        <img src="assets/img/range rover.jpg" class="img" alt="">
+        <span>RANGE ROVER</span>
+        <div class="quantity">
+          <button onclick="decrementQuantity(this)">-</button>
+          <input type="number" min="0" value="0" data-price="18500000">
+          <button onclick="incrementQuantity(this)">+</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="assets/img/audi.jpg" class="img" alt="">
+        <span>AUDI Q5</span>
+        <div class="quantity">
+          <button onclick="decrementQuantity(this)">-</button>
+          <input type="number" min="0" value="0" data-price="13500000">
+          <button onclick="incrementQuantity(this)">+</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="assets/img/Bentley Bentayga.jpg" class="img" alt="">
+        <span>BENTLEY BENTYAGA</span>
+        <div class="quantity">
+          <button onclick="decrementQuantity(this)">-</button>
+          <input type="number" min="0" value="0" data-price="19800000">
+          <button onclick="incrementQuantity(this)">+</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="assets/img/merced.png" class="img" alt="">
+        <span>MERCEDES BENZ</span>
+        <div class="quantity">
+          <button onclick="decrementQuantity(this)">-</button>
+          <input type="number" min="0" value="0" data-price="20700000">
+          <button onclick="incrementQuantity(this)">+</button>
+        </div>
+      </div>
+      <div class="cart-item">
+          <img src="assets/img/bmw.jpg" class="img" alt="">
+          <span>BMW I8</span>
+          <div class="quantity">
+            <button onclick="decrementQuantity(this)">-</button>
+            <input type="number" min="0" value="0" data-price="9500000">
+            <button onclick="incrementQuantity(this)">+</button>
+          </div>
+        </div>
+
+      <h3 id="wat" >watches</h3>
+      <div class="cart-item">
+        <img src="assets/img/product1.png" class="img" alt="">
+        <span>SPIRIT ROSE</span>
+        <div class="quantity">
+          <button onclick="decrementQuantity(this)">-</button>
+          <input type="number" min="0" value="0" data-price="3">
+          <button onclick="incrementQuantity(this)">+</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="assets/img/product2.png" class="img" alt="">
+        <span>KHAKI PILOT</span>
+        <div class="quantity">
+          <button onclick="decrementQuantity(this)">-</button>
+          <input type="number" min="0" value="0" data-price="1">
+          <button onclick="incrementQuantity(this)">+</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="assets/img/product3.png" class="img" alt="">
+        <span>JUBLEE BLACK</span>
+        <div class="quantity">
+          <button onclick="decrementQuantity(this)">-</button>
+          <input type="number" min="0" value="0" data-price="10">
+          <button onclick="incrementQuantity(this)">+</button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="assets/img/product4.png" class="img" alt="">
+        <span>FOSIL MC3</span>
+        <div class="quantity">
+          <button onclick="decrementQuantity(this)">-</button>
+          <input type="number" min="0" value="0" data-price="5">
+          <button onclick="incrementQuantity(this)">+</button>
+        </div>
+      </div>
+      <div class="cart-item">
+          <img src="assets/img/product5.png" class="img" alt="">
+          <span>DUCHEN</span>
+          <div class="quantity">
+            <button onclick="decrementQuantity(this)">-</button>
+            <input type="number" min="0" value="0" data-price="2">
+            <button onclick="incrementQuantity(this)">+</button>
+          </div>
+        </div>
+        <h3 id="ele" >electronics</h3>
+        <div class="cart-item">
+          <img src="assets/img/macair.jpg" class="img" alt="">
+          <span>MACBOOK AIR 13</span>
+          <div class="quantity">
+            <button onclick="decrementQuantity(this)">-</button>
+            <input type="number" min="0" value="0" data-price="65000">
+            <button onclick="incrementQuantity(this)">+</button>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="assets/img/phne.jpg" class="img" alt="">
+          <span>IPHONE 13</span>
+          <div class="quantity">
+            <button onclick="decrementQuantity(this)">-</button>
+            <input type="number" min="0" value="0" data-price="33350">
+            <button onclick="incrementQuantity(this)">+</button>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="assets/img/camera.jpg" class="img" alt="">
+          <span>CANNON CAMERA</span>
+          <div class="quantity">
+            <button onclick="decrementQuantity(this)">-</button>
+            <input type="number" min="0" value="0" data-price="82000">
+            <button onclick="incrementQuantity(this)">+</button>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="assets/img/airpod.png" class="img" alt="">
+          <span>AIRPOD PRO</span>
+          <div class="quantity">
+            <button onclick="decrementQuantity(this)">-</button>
+            <input type="number" min="0" value="0" data-price="1650">
+            <button onclick="incrementQuantity(this)">+</button>
+          </div>
+        </div>
+        <div class="cart-item">
+            <img src="assets/img/tv.jpg" class="img" alt="">
+            <span>SAMSUNG QLED </span>
+            <div class="quantity">
+              <button onclick="decrementQuantity(this)">-</button>
+              <input type="number" min="0" value="0" data-price="49500">
+              <button onclick="incrementQuantity(this)">+</button>
+            </div>
+          </div>
+          <h3 id="bok" >BOOKS</h3>
+          <div class="cart-item">
+            <img src="assets/img/101essays.jpg" class="img" alt="">
+            <span>BRIANNA WEST BOOK</span>
+            <div class="quantity">
+              <button onclick="decrementQuantity(this)">-</button>
+              <input type="number" min="0" value="0" data-price="1500">
+              <button onclick="incrementQuantity(this)">+</button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="assets/img/comuni.jpg" class="img" alt="">
+            <span>COMMUNIST MANIFESTO</span>
+            <div class="quantity">
+              <button onclick="decrementQuantity(this)">-</button>
+              <input type="number" min="0" value="0" data-price="1350">
+              <button onclick="incrementQuantity(this)">+</button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="assets/img/48.jpg" class="img" alt="">
+            <span>48 LAWS OF POWER</span>
+            <div class="quantity">
+              <button onclick="decrementQuantity(this)">-</button>
+              <input type="number" min="0" value="0" data-price="1870">
+              <button onclick="incrementQuantity(this)">+</button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="assets/img/theart.jpg" class="img" alt="">
+            <span>THE ART OF WAR</span>
+            <div class="quantity">
+              <button onclick="decrementQuantity(this)">-</button>
+              <input type="number" min="0" value="0" data-price="2650">
+              <button onclick="incrementQuantity(this)">+</button>
+            </div>
+          </div>
+          <div class="cart-item">
+              <img src="assets/img/greatgat.jpg" class="img" alt="">
+              <span>THE GREAT GATSBY</span>
+              <div class="quantity">
+                <button onclick="decrementQuantity(this)">-</button>
+                <input type="number" min="0" value="0" data-price="1950">
+                <button onclick="incrementQuantity(this)">+</button>
+              </div>
+            </div>
+            <h3 id="sho" >SHOES</h3>
+            <div class="cart-item">
+              <img src="assets/img/jordan.jpg" class="img" alt="">
+              <span>AIR JORDAN 13</span>
+              <div class="quantity">
+                <button onclick="decrementQuantity(this)">-</button>
+                <input type="number" min="0" value="0" data-price="4500">
+                <button onclick="incrementQuantity(this)">+</button>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img src="assets/img/Casadei.jpg" class="img" alt="">
+              <span>LADY HEEL SHOES</span>
+              <div class="quantity">
+                <button onclick="decrementQuantity(this)">-</button>
+                <input type="number" min="0" value="0" data-price="1350">
+                <button onclick="incrementQuantity(this)">+</button>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img src="assets/img/boots.jpg" class="img" alt="">
+              <span>ZARA BLACK BOOTS</span>
+              <div class="quantity">
+                <button onclick="decrementQuantity(this)">-</button>
+                <input type="number" min="0" value="0" data-price="3870">
+                <button onclick="incrementQuantity(this)">+</button>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img src="assets/img/slides.jpg" class="img" alt="">
+              <span>BLACK SLIDES </span>
+              <div class="quantity">
+                <button onclick="decrementQuantity(this)">-</button>
+                <input type="number" min="0" value="0" data-price="650">
+                <button onclick="incrementQuantity(this)">+</button>
+              </div>
+            </div>
+            <div class="cart-item">
+                <img src="assets/img/vans.png" class="img" alt="">
+                <span>VANS</span>
+                <div class="quantity">
+                  <button onclick="decrementQuantity(this)">-</button>
+                  <input type="number" min="0" value="0" data-price="2650">
+                  <button onclick="incrementQuantity(this)">+</button>
+                </div>
+              </div>
+              <h3 id="bea" >BEAUTY</h3>
+              <div class="cart-item">
+                <img src="assets/img/dove.jpg" class="img" alt="">
+                <span>DOVE ANTIPERSPIRANT</span>
+                <div class="quantity">
+                  <button onclick="decrementQuantity(this)">-</button>
+                  <input type="number" min="0" value="0" data-price="550">
+                  <button onclick="incrementQuantity(this)">+</button>
+                </div>
+              </div>
+              <div class="cart-item">
+                <img src="assets/img/ceravemoisture.jpg" class="img" alt="">
+                <span>CERAVE MOISTURIZER</span>
+                <div class="quantity">
+                  <button onclick="decrementQuantity(this)">-</button>
+                  <input type="number" min="0" value="0" data-price="350">
+                  <button onclick="incrementQuantity(this)">+</button>
+                </div>
+              </div>
+              <div class="cart-item">
+                <img src="assets/img/lotion.jpg" class="img" alt="">
+                <span>BODY LOTION</span>
+                <div class="quantity">
+                  <button onclick="decrementQuantity(this)">-</button>
+                  <input type="number" min="0" value="0" data-price="870">
+                  <button onclick="incrementQuantity(this)">+</button>
+                </div>
+              </div>
+              <div class="cart-item">
+                <img src="assets/img/sunscreen.jpg" class="img" alt="">
+                <span>SUNSCREEN</span>
+                <div class="quantity">
+                  <button onclick="decrementQuantity(this)">-</button>
+                  <input type="number" min="0" value="0" data-price="650">
+                  <button onclick="incrementQuantity(this)">+</button>
+                </div>
+              </div>
+              <div class="cart-item">
+                  <img src="assets/img/lipbalm.jpg" class="img" alt="">
+                  <span>LIP BALM</span>
+                  <div class="quantity">
+                    <button onclick="decrementQuantity(this)">-</button>
+                    <input type="number" min="0" value="0" data-price="150">
+                    <button onclick="incrementQuantity(this)">+</button>
+                  </div>
+                </div>
+                <h3 id="hea" >HEALTH</h3>
+                <div class="cart-item">
+                  <img src="assets/img/moist.jpg" class="img" alt="">
+                  <span>MOISTURIZER</span>
+                  <div class="quantity">
+                    <button onclick="decrementQuantity(this)">-</button>
+                    <input type="number" min="0" value="0" data-price="2150">
+                    <button onclick="incrementQuantity(this)">+</button>
+                  </div>
+                </div>
+                <div class="cart-item">
+                  <img src="assets/img/vitamin.jpg" class="img" alt="">
+                  <span>VITAMIN D3</span>
+                  <div class="quantity">
+                    <button onclick="decrementQuantity(this)">-</button>
+                    <input type="number" min="0" value="0" data-price="1000">
+                    <button onclick="incrementQuantity(this)">+</button>
+                  </div>
+                </div>
+                <div class="cart-item">
+                  <img src="assets/img/Impact Whey Protein.jpg" class="img" alt="">
+                  <span>WHEY PROTEIN</span>
+                  <div class="quantity">
+                    <button onclick="decrementQuantity(this)">-</button>
+                    <input type="number" min="0" value="0" data-price="7000">
+                    <button onclick="incrementQuantity(this)">+</button>
+                  </div>
+                </div>
+                <div class="cart-item">
+                  <img src="assets/img/creatien.jpg" class="img" alt="">
+                  <span>CREATINE MONOHYDRATE</span>
+                  <div class="quantity">
+                    <button onclick="decrementQuantity(this)">-</button>
+                    <input type="number" min="0" value="0" data-price="3000">
+                    <button onclick="incrementQuantity(this)">+</button>
+                  </div>
+                </div>
+                <div class="cart-item">
+                    <img src="assets/img/backstretch.jpg" class="img" alt="">
+                    <span>BACKSTRECHER</span>
+                    <div class="quantity">
+                      <button onclick="decrementQuantity(this)">-</button>
+                      <input type="number" min="0" value="0" data-price="900">
+                      <button onclick="incrementQuantity(this)">+</button>
+                    </div>
+                  </div>
+    <div class="cart-total">
+    
+      Total: $0
+    <br>
+    <br>
+    </div>
+    
+    <button onclick="checkout()" class="button">Checkout</button>
+    <a href="checkout.html"> 
+      <br><br>
+      <button class="button">get your stuff</button>
+  </a>
+  </div>
+
+  <script>
+    // JavaScript code for the shopping cart functionality
+    function checkout() {
+      // Get all cart items
+      var cartItems = document.querySelectorAll('.cart-item input');
+      
+      // Calculate the total price
+      var totalPrice = 0;
+      cartItems.forEach(function(item) {
+        var quantity = parseInt(item.value);
+        var price = parseInt(item.getAttribute('data-price'));
+        totalPrice += quantity * price;
+      });
+      
+      // Display the total price
+      var totalElement = document.querySelector('.cart-total');
+      totalElement.textContent = 'Total: $' + totalPrice;
+
+    }
+    
+    function incrementQuantity(button) {
+      var input = button.parentNode.querySelector('input');
+      var currentValue = parseInt(input.value);
+      input.value = currentValue + 1;
+    }
+    
+    function decrementQuantity(button) {
+      var input = button.parentNode.querySelector('input');
+      var currentValue = parseInt(input.value);
+      if (currentValue > 0) {
+        input.value = currentValue - 1;
+      }
+    }
+  </script>
+   <footer class="footer section">
+    <a href="#top"  class="button" >Back to top</a>
+    </footer>
+</body>
+</html>

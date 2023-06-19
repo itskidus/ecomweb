@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+  <!--=============== BOXICONS ===============-->
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <!--=============== BOXICONS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!--=============== CSS ===============-->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'roboto', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #a4aab9;
+    }
+
+    .wrapper {
+      position: relative;
+      max-width: 730px;
+      width: 100%;
+      background: #fff;
+      padding: 34px;
+      border-radius: 6px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .wrapper h2 {
+      position: relative;
+      font-size: 22px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .wrapper h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 28px;
+      border-radius: 12px;
+      background: #4070f4;
+    }
+
+    .wrapper form {
+      margin-top: 30px;
+    }
+
+    .wrapper form .input-box {
+      height: 52px;
+      margin: 18px 0;
+    }
+
+    form .input-box input {
+      height: 100%;
+      width: 100%;
+      outline: none;
+      padding: 0 15px;
+      font-size: 17px;
+      font-weight: 400;
+      color: #333;
+      border: 1.5px solid #C7BEBE;
+      border-bottom-width: 2.5px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .input-box input:focus,
+    .input-box input:valid {
+      border-color: #4070f4;
+    }
+
+    form .policy {
+      display: flex;
+      align-items: center;
+    }
+
+    form h3 {
+      color: #707070;
+      font-size: 14px;
+      font-weight: 500;
+      margin-left: 10px;
+    }
+
+    .input-box.button {
+      display: flex;
+    }
+
+    .input-box.button input {
+      flex: 1;
+      color: #fff;
+      letter-spacing: 1px;
+      border: none;
+      background: #000000;
+      cursor: pointer;
+    }
+
+    .input-box.button input:hover {
+      background: #0e4bf1;
+    }
+
+    .input-box.dropdown {
+      display: flex;
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .input-box.dropdown select {
+      height: 100%;
+      width: 100%;
+      outline: none;
+      padding: 0 15px;
+      font-size: 17px;
+      font-weight: 400;
+      color: #333;
+      border: 1.5px solid #C7BEBE;
+      border-bottom-width: 2.5px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .message-box {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .message-box p {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      border-radius: 6px;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration or Sign Up form in HTML CSS</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form action="register1.php" method="post">
+      <div class="input-box">
+        <input type="text" name="name" placeholder="Enter your name" autocomplete="off" required>
+      </div>
+      <div class="input-box">
+        <input type="text" name="name2" placeholder="Enter your last name" autocomplete="off" required>
+      </div>
+      <div class="input-box">
+        <input type="text" name="email" placeholder="Enter your email" autocomplete="off" required>
+      </div>
+      <div class="input-box">
+        <input type="password" name="passw" placeholder="Enter password" autocomplete="off" required>
+      </div>
+      <div class="input-box">
+        <input type="number" name="age" placeholder="Age" autocomplete="off" required>
+      </div>
+
+      <div class="input-box dropdown">
+        <select name="dropdown1" autocomplete="off">
+          <option value="" disabled selected>Bank payment choice</option>
+          <option value="option1">CBE</option>
+          <option value="option2">ABYSSINIA</option>
+          <option value="option3">COOP</option>
+        </select>
+      </div>
+      <div class="input-box dropdown">
+        <select name="dropdown2" autocomplete="off">
+          <option value="" disabled selected>CITY</option>
+          <option value="option1">ADDIS ABABA</option>
+          <option value="option2">ADAMA</option>
+          <option value="option3">BAHRDAR</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <input type="number" name="bank" placeholder="Enter your chosen bank's account number" autocomplete="off" required>
+      </div>
+      <div class="input-box button">
+        <input type="submit" value="Register now" onclick="showMessageBox()">
+      </div>
+    </form>
+  </div>
+
+  <div class="message-box" id="messageBox">
+    <p>YOUR ORDER IS COMPLETE</p>
+  </div>
+
+  <script>
+    function showMessageBox() {
+      document.getElementById("messageBox").style.display = "flex";
+    }
+
+    document.addEventListener("keyup", function(event) {
+      if (event.key === "Enter") {
+        document.getElementById("messageBox").style.display = "none";
+      }
+    });
+  </script>
+</body>
+
+</html>

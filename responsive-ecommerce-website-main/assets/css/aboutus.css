@@ -1,0 +1,21 @@
+*{
+  font-family: 'roboto';
+}
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  width: 45%;
+  margin: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
